@@ -72,7 +72,7 @@ if st.button("Calcular"):
         result_in_decimal, result_in_choice_base = calculate(equation, new_base)
         
         if result_in_decimal is not None and result_in_choice_base is not None:
-            st.success(f"{equation} = {result_in_decimal}_10 = {result_in_choice_base}_{new_base}")
+            st.success(f"{equation} = {st.latex(f'{result_in_decimal}_10')} = {st.latex(f'{result_in_choice_base}_{new_base}')}")
     else:
         st.error("Por favor, insira uma equação válida.")
 
