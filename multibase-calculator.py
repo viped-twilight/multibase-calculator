@@ -58,7 +58,7 @@ def calculate(equation, new_base):
 st.set_page_config(page_title="Calculadora de Bases", layout="centered")
 
 st.title("Calculadora de Bases Numéricas")
-st.write("Insira uma equação, incluindo os operandos com suas respectivas bases (ex: `1010_2 + 15_10`) e escolha uma base para o resultado.")
+st.write("Insira uma equação, incluindo os operandos com suas respectivas bases (ex.: `1010_2 + 15_10` equivale a $1010_2 + 15_{10}$) e escolha uma base para o resultado.")
 
 # Caixa de entrada para a equação
 equation = st.text_input("Digite a equação:")
@@ -72,7 +72,7 @@ if st.button("Calcular"):
         result_in_decimal, result_in_choice_base = calculate(equation, new_base)
         
         if result_in_decimal is not None and result_in_choice_base is not None:
-            st.success(f"{equation} = {st.latex(f'{result_in_decimal}_{10}')} = {st.latex(f'{result_in_choice_base}_{new_base}')}")
+            st.success(f"{equation} = ${result_in_decimal}_{10}$ = ${result_in_choice_base}_{new_base}$")
     else:
         st.error("Por favor, insira uma equação válida.")
 
