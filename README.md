@@ -12,16 +12,17 @@ representação em string.
 Estrutura
 =========
 O módulo define:
-- `CONVENTIONS`: Uma lista de caracteres válidos para representar números em diferentes bases (0-9 e A-Z);
-- `validate_char()`: Função para validar se um caractere é válido para a base numérica;
-- `base`, `valueLabel`, `Base`, `ValueLabel`, `Char`: Tipos customizados para base e valor do número;
-- `NumericBase`: Classe principal para representar um número em uma base específica.
+- `CONVENTIONS`: uma lista de caracteres válidos para representar números em diferentes bases (0-9 e A-Z);
+- `validate_char()`: função para validar se um caractere é válido para a base numérica;
+- `base`, `valueLabel`, `Base`, `ValueLabel`, `Char`: tipos customizados para base e valor do número;
+- `NumericBase`: classe principal para representar um número em uma base específica;
+- `_Helper`: subclasse de `NumericBase` para armazenamento de métodos úteis e repetitivos.
 
 Funcionalidades
 ===============
 - Representação de números em diferentes bases.
 - Conversão entre bases numéricas.
-- Operações de adição e multiplicação entre números em bases diferentes.
+- Operações de adição, subtração, multiplicação e <mark>divisão</mark>* entre números em bases diferentes.
 - Validação de caracteres para garantir a integridade da base numérica.
 - Formatação de saída em string para exibição.
 
@@ -31,6 +32,19 @@ Este módulo foi criado para facilitar a manipulação de números em diferentes
 bases numéricas, fornecendo uma estrutura de dados e funções para realizar 
 operações e conversões de forma eficiente e segura.
 
+Melhorias
+=========
+A Operação de divisão por meio da sobrecarga do operado `/` que ocorre do método
+`NumericBase.__truediv__` não apresenta desemprenho suficiente para ser utilizada.
+Por isso, recomenda-se fortemente substituir, quando possível, a divisão por uma 
+operação de multiplicação com o operador `*`.
+
+TODO
+====
+* [x] Crição da Subclasse _Helper;
+* [x] Implementação de tratamento de erros para operações com bases distrintas;
+* [ ] Correção do funcionamento do método `NumericBase.__truediv__`;
+* [ ] Implementação de interface Web simples.
 
 Sobre
 =====
@@ -40,4 +54,3 @@ Sobre
 **Autor:** Pedro Costa
 
 **Data:** 28/11/2024
-"""
