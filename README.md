@@ -32,6 +32,31 @@ Este módulo foi criado para facilitar a manipulação de números em diferentes
 bases numéricas, fornecendo uma estrutura de dados e funções para realizar 
 operações e conversões de forma eficiente e segura.
 
+Usabilidade:
+------
+```Python
+  >>> num = NumericBase(9, "12")
+  >>> num.atual_base
+  9
+  >>> num.value
+  '12'
+  >>> num1, num2 = NumericBase(9, "12"), NumericBase(9, "5")
+  >>> num1 - num2
+  NumericBase(atual_base=9, value='6', erros='strict')
+  
+  >>> num1, num2 = NumericBase(9, "12"), NumericBase(9, "5", "coerce")
+  >>> num1 - num2
+  NumericBase(atual_base=9, value='6', erros='strict')
+
+  >>> num1, num2 = NumericBase(10, "40.2", "coerce"), NumericBase(8, "0.2", "coerce")
+  >>> num1 - num2
+  NumericBase(atual_base=10, value='49.95', erros='coerce')
+
+  >>> num1, num2 = NumericBase(9, "12"), NumericBase(9, "5")
+  >>> num1 + num2
+  NumericBase(atual_base=9, value='17', erros='strict')
+```
+
 Melhorias
 =========
 A Operação de divisão por meio da sobrecarga do operado `/` que ocorre do método
