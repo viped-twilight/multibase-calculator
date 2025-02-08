@@ -35,6 +35,7 @@ operações e conversões de forma eficiente e segura.
 Usabilidade:
 ------
 ```Python
+  >>> from multibase calculator import NumericBase
   >>> num = NumericBase(9, "12")
   >>> num.atual_base
   9
