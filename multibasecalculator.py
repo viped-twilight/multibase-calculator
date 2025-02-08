@@ -20,10 +20,10 @@ O módulo define:
 
 Funcionalidades
 ===============
-- Representação de números em diferentes bases.
-- Conversão entre bases numéricas.
-- Operações de adição e multiplicação entre números em bases diferentes.
-- Validação de caracteres para garantir a integridade da base numérica.
+- Representação de números em diferentes bases;
+- Conversão entre bases numéricas;
+- Operações de adição, subtração, multiplicação e divisão entre números em bases diferentes;
+- Validação de caracteres para garantir a integridade da base numérica;
 - Formatação de saída em string para exibição.
 
 Finalidade
@@ -36,7 +36,9 @@ operações e conversões de forma eficiente e segura.
 Sobre
 =====
 Versão: 1.0.0
+
 Autor: Pedro Costa
+
 Data: 28/11/2024
 """
 from dataclasses import dataclass
