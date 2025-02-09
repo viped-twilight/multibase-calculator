@@ -33,7 +33,7 @@ bases numéricas, fornecendo uma estrutura de dados e funções para realizar
 operações e conversões de forma eficiente e segura.
 
 Usabilidade:
-------
+===========
 ```Python
   >>> from multibasecalculator import NumericBase
   >>> num = NumericBase(9, "12")
