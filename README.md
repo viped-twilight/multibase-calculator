@@ -1,4 +1,4 @@
-# Multibase-caulculator
+# Multibase-calculator
 
 Módulo para operações com números em diferentes bases.
 
