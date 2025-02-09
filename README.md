@@ -1,4 +1,9 @@
+# Multibase-caulculator
+
 Módulo para operações com números em diferentes bases.
+
+![Python](https://img.shields.io/static/v1?label=Python&message=language&color=darkgreen&style=for-the-badge&logo=python)
+
 
 Descrição
 ===========
@@ -103,9 +108,13 @@ Convenções
 Melhorias
 =========
 A Operação de divisão por meio da sobrecarga do operado `/` que ocorre do método
-`NumericBase.__truediv__` não apresenta desemprenho suficiente para ser utilizada.
+`NumericBase.__truediv__` não apresenta desempenho suficiente para ser utilizada.
 Por isso, recomenda-se fortemente substituir, quando possível, a divisão por uma 
 operação de multiplicação com o operador `*`.
+
+> [!WARNING]
+> A Operação de divisão por meio da sobrecarga do operado `/` que ocorre do método
+`NumericBase.__truediv__` não apresenta desempenho suficiente para ser utilizada..
 
 TODO
 ====
