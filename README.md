@@ -27,9 +27,11 @@ Funcionalidades
 ===============
 - Representação de números em diferentes bases.
 - Conversão entre bases numéricas.
-- Operações de adição, subtração, multiplicação e <mark>divisão</mark>* entre números em bases diferentes.
+- Operações de adição, subtração, multiplicação e <mark>divisão</mark>[^1] entre números em bases diferentes.
 - Validação de caracteres para garantir a integridade da base numérica.
 - Formatação de saída em string para exibição.
+
+[^1]: Seu funcionamento precisa de melhoria para possibilitar seu uso.
 
 Finalidade
 ==========
@@ -114,7 +116,7 @@ operação de multiplicação com o operador `*`.
 
 > [!WARNING]
 > A Operação de divisão por meio da sobrecarga do operado `/` que ocorre do método
-`NumericBase.__truediv__` não apresenta desempenho suficiente para ser utilizada..
+`NumericBase.__truediv__` não apresenta desempenho suficiente para ser utilizada.
 
 TODO
 ====
