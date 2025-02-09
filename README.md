@@ -133,3 +133,6 @@ Sobre
 **Autor:** Pedro Costa
 
 **Data:** 28/11/2024
+
+Notas de Rodapé
+===============
