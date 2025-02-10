@@ -14,6 +14,19 @@ automaticamente para uma base comum antes da operação. A classe `NumericBase`
 inclui métodos para conversão entre bases, validação de caracteres e 
 representação em string.
 
+Índice
+=======
+1. [Estrutura](#estrutura)
+2. [Funcionalidades](#funcionalidades)
+3. [Finalidade](#finalidade)
+4. [Usabilidade](#usabilidade)
+5. [Convenções](#convenções)
+6. [Melhorias](#melhorias)
+7. [TODO](#todo)
+8. [Sobre](#sobre)
+9. [Notas de Rodapé](#notas-de-rodapé)
+
+
 Estrutura
 =========
 O módulo define:
@@ -39,7 +52,7 @@ Este módulo foi criado para facilitar a manipulação de números em diferentes
 bases numéricas, fornecendo uma estrutura de dados e funções para realizar 
 operações e conversões de forma eficiente e segura.
 
-Usabilidade:
+Usabilidade
 ===========
 ```Python
   >>> from multibasecalculator import NumericBase
