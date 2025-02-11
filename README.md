@@ -1,9 +1,16 @@
-# Multibase-calculator
+<h1 align="center">Multibase-calculator</h1>
 
 Módulo para operações com números em diferentes bases.
 
-![Python](https://img.shields.io/static/v1?label=Python&message=language&color=darkgreen&style=for-the-badge&logo=python)
-
+![Python](https://img.shields.io/static/v1?label=Python&message=≥V3.5&color=darkgreen&style=for-the-badge&logo=python)
+<!--
+styles for badges: 
+  * for-the-badge;
+  * flat;
+  * flat-square
+  * social;
+  * plastic.
+-->
 
 Descrição
 ===========
@@ -38,10 +45,10 @@ O módulo define:
 
 Funcionalidades
 ===============
-- Representação de números em diferentes bases.
-- Conversão entre bases numéricas.
-- Operações de adição, subtração, multiplicação e <mark>divisão</mark>[^1] entre números em bases diferentes.
-- Validação de caracteres para garantir a integridade da base numérica.
+- Representação de números em diferentes bases;
+- Conversão entre bases numéricas;
+- Operações de adição, subtração, multiplicação e <mark>divisão</mark>[^1] entre números em bases diferentes;
+- Validação de caracteres para garantir a integridade da base numérica;
 - Formatação de saída em string para exibição.
 
 [^1]: Seu funcionamento precisa de melhoria para possibilitar seu uso.
